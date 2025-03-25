@@ -22,7 +22,7 @@
       .html {
         background-color: #04aa6d;
       }
-      .css {
+      .CSS {
         background-color: #2196f3;
       }
       .js {
@@ -38,22 +38,22 @@
 
     <p>HTML</p>
     <div class="container">
-      <div class="skills html" style="width: 0%">0%</div>
+      <div class="html" style="width: 0%">0%</div>
     </div>
 
     <p>CSS</p>
     <div class="container">
-      <div class="skills html" style="width: 0%">0%</div>
+      <div class="CSS" style="width: 0%">0%</div>
     </div>
 
     <p>JavaScript</p>
     <div class="container">
-      <div class="skills html" style="width: 0%">0%</div>
+      <div class="js" style="width: 0%">0%</div>
     </div>
 
     <p>PHP</p>
     <div class="container">
-      <div class="skills html" style="width: 0%">0%</div>
+      <div class="php" style="width: 0%">0%</div>
     </div>
     <script>
       const linkedinProfile = {
@@ -94,8 +94,15 @@
       };
 
       // EJERCICIO:  Tú código a partir de aquí
+      document.querySelector(".html").style.width = linkedinProfile.skillsLevel.HTML + '%';
+      document.querySelector(".html").textContent = linkedinProfile.skillsLevel.HTML + '%';
+      document.querySelector(".CSS").style.width = linkedinProfile.skillsLevel.CSS + '%';
+      document.querySelector(".CSS").textContent = linkedinProfile.skillsLevel.CSS + '%';
+      document.querySelector(".js").style.width = linkedinProfile.skillsLevel.JavaScript + '%';
+      document.querySelector(".js").textContent = linkedinProfile.skillsLevel.JavaScript + '%';
+      document.querySelector(".php").style.width = linkedinProfile.skillsLevel.PHP + '%';
+      document.querySelector(".php").textContent = linkedinProfile.skillsLevel.PHP + '%';
       
-
     </script>
   </body>
 </html>
